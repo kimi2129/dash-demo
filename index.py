@@ -22,5 +22,7 @@ def display_page(tab):
     if tab == 'dash':
         return app2.layout
 
+server = app.server
+
 if __name__ == '__main__':
     app.run_server(debug=True)
