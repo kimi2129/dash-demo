@@ -1,1 +1,1 @@
-web:: gunicorn -w 4 -b 0.0.0.0:$PORT -k index.py:server
+web: gunicorn index.py:server
