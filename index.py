@@ -6,7 +6,7 @@ from app import app
 from apps import app1, app2
 
 app.layout = html.Div([
-    dcc.Location(id='url', refresh=False),
+    #dcc.Location(id='url', refresh=False),
     dcc.Tabs(id="tabs", value='plotly', children=[
             dcc.Tab(label='Plotly', value='plotly'),
             dcc.Tab(label='Dash', value='dash'),
