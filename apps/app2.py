@@ -7,7 +7,7 @@ from app import app
 
 # from apps.input_state import input, state
 layout = html.Div([
-    dcc.Link('Go to Plotly', href='/apps/app1'),
+    #dcc.Link('Go to Plotly', href='/apps/app1'),
     html.H3('Dash'),
     dcc.Dropdown(
         id='app-2-dropdown',

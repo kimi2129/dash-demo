@@ -11,7 +11,7 @@ from apps.chart_types.maps import *
 from apps.chart_types.threeD import *
 
 layout = html.Div([
-    dcc.Link('Go to Dash', href='/apps/app2'),
+    #dcc.Link('Go to Dash', href='/apps/app2'),
     html.H3('Plotly'),
     dcc.Dropdown(
         id='app-1-dropdown',
