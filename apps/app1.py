@@ -12,7 +12,7 @@ from apps.chart_types.threeD import *
 
 layout = html.Div([
     #dcc.Link('Go to Dash', href='/apps/app2'),
-    html.H3('Plotly'),
+    #html.H3('Plotly'),
     dcc.Dropdown(
         id='app-1-dropdown',
         options=[
@@ -24,6 +24,7 @@ layout = html.Div([
             {'label': '3D Charts', 'value': 'threeD'},
         ]
     ),
+    html.Br(),
     html.Div(id='app-1-display-value'),
 ])
 

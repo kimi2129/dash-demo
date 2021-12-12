@@ -8,7 +8,7 @@ from app import app
 # from apps.input_state import input, state
 layout = html.Div([
     #dcc.Link('Go to Plotly', href='/apps/app1'),
-    html.H3('Dash'),
+    #html.H3('Dash'),
     dcc.Dropdown(
         id='app-2-dropdown',
         options=[
@@ -16,6 +16,7 @@ layout = html.Div([
             {'label': 'State', 'value': 'state'},
         ]
     ),
+    html.Br(),
     html.Div(id='app-2-display-value'),
 ])
 
@@ -33,6 +34,7 @@ def display_value(value):
                         {'label': 'Bar Chart', 'value': 'bar'},
                     ]
                 ),
+                html.Br(),
                 html.Div(id='input-div-display'),
             ])
     if value == 'state':
@@ -42,9 +44,11 @@ def display_value(value):
                 options=[
                     {'label': 'Line Chart', 'value': 'line'},
                     {'label': 'Bar Chart', 'value': 'bar'},
-                ]
+                ],
             ),
+            html.Br(),
             html.Button('Submit', id='btn-submit'),
+            html.Br(),
             html.Div(id='state-div-display'),
         ])
 

@@ -11,8 +11,9 @@ app.layout = html.Div([
             dcc.Tab(label='Plotly', value='plotly'),
             dcc.Tab(label='Dash', value='dash'),
         ]),
-    html.Div(id='page-content')
-])
+    html.Br(),
+    html.Div(id='page-content',)
+], style={'margin': '2%'})
 
 @app.callback(Output('page-content', 'children'),
               Input('tabs', 'value'))
