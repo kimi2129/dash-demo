@@ -7,7 +7,7 @@ from apps import app1, app2
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
-    html.Div(id='page-content')
+    html.Div(id='page-content', style={'margin': '5%'})
 ])
 
 @app.callback(Output('page-content', 'children'),
