@@ -6,8 +6,8 @@ from datetime import datetime
 import plotly.graph_objects as go
 
 def time_series():
-    df = px.data.stocks()
-    fig = px.line(df, x='date', y="GOOG")
+    df_stock = px.data.stocks()
+    fig = px.line(df_stock, x='date', y="GOOG")
     return dcc.Graph(figure=fig)
 def candlestick():
     df = pd.read_csv('https://raw.githubusercontent.com/plotly/datasets/master/finance-charts-apple.csv')

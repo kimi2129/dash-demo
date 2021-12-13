@@ -36,17 +36,18 @@ def display_value(value):
     if value == 'basic':
         return html.Div([line(),
                         bar(),
-                        scatter()])
+                        scatter(),
+                        pie()])
     if value == 'statistical':
         return html.Div([histogram(),
                         boxplot()])
     if value == 'scientific':
-        return html.Div([heatmap(),
-                        radar()])
+        return html.Div([heatmap()])
     if value == 'financial':
         return html.Div([time_series(),
                         candlestick()])
     if value == 'maps':
         return html.Div([Choropleth_Maps()])
     if value == 'threeD':
-        return html.Div([Surface_Plots()])
+        return html.Div([Surface_Plots(),
+                         threed_scatter()])
